@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+  <head>
+    <title>Bar Post</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <h1>Resultados</h1>
+    <p th:text="'Id: ' + ${person.id}" />
+    <p th:text="'Name: ' + ${person.name}" />
+    <p th:text="'City: ' + ${person.city}" />
+    <p th:text="'Age: ' + ${person.Age}" />
+
+    <a href="/foobar">Envie outra Pessoa</a>
+  </body>
+</html>

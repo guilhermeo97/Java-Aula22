@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+  <head>
+    <title>Foo Get</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  </head>
+  <body>
+    <h1>Formulario:</h1>
+    <form action="#" th:action="@{/foobar}" th:object="${person}" method="post">
+      <p>Id: <input type="text" th:field="*{id}" /></p>
+      <p>Name: <input type="text" th:field="*{name}" /></p>
+      <p>City: <input type="text" th:field="*{city}" /></p>
+      <p>Age: <input type="text" th:field="*{age}" /></p>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Resetar" />
+      </p>
+    </form>
+  </body>
+</html>
